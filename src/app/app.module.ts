@@ -7,6 +7,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { CoursesModule } from './features/courses/courses.module';
+import { AdminModule } from './features/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CoursesModule } from './features/courses/courses.module';
     CoursesModule,
     AppRoutingModule,
     FormsModule,
+    AdminModule
     
   ],
   providers: [],

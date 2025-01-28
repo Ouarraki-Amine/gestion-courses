@@ -1,1 +1,28 @@
-<p>admin-dashboard works!</p>
+<div class="admin-dashboard">
+    <h1>Tableau de bord Admin</h1>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Titre</th>
+          <th>Description</th>
+          <th>Durée</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of courses">
+          <td>{{ course.id }}</td>
+          <td>{{ course.title }}</td>
+          <td>{{ course.description }}</td>
+          <td>{{ course.duration }} heures</td>
+          <td>
+            <button (click)="deleteCourse(course.id)">Supprimer</button>
+            <a [routerLink]="['/admin/edit-course', course.id]"  routerLinkActive="active">Modifier</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
