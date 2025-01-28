@@ -22,6 +22,9 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule,
     HttpClientModule
+  ],
+  exports:[
+    CoursesComponent
   ]
 })
 export class CoursesModule { }

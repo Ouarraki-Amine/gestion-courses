@@ -1,11 +1,13 @@
 <nav class="navbar">
     <div class="logo">
-      <a routerLink="/">Gestion des Cours</a>
+      <a routerLink="/courses">Gestion des Cours</a>
     </div>
     <ul class="nav-links">
-      <a routerLink="/" routerLinkActive="active">Accueil</a>
-      <a routerLink="/courses" routerLinkActive="active">Cours</a>
-      <a routerLink="/admin" routerLinkActive="active">Admin</a>
+      <li><a routerLink="/courses" routerLinkActive="active">Cours</a></li>
+      <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
       <li><a routerLink="/courses/add">Ajouter un cours</a></li>
+      <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login">Connexion</a></li>
+      <li *ngIf="authService.isLoggedIn()"><a (click)="onLogout()">Déconnexion</a></li>
+    
     </ul>
   </nav>

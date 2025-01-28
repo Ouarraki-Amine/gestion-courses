@@ -8,18 +8,20 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { CoursesModule } from './features/courses/courses.module';
 import { AdminModule } from './features/admin/admin.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    NavbarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     CoursesModule,
     AppRoutingModule,
     FormsModule,
+    CoreModule,
     AdminModule
     
   ],

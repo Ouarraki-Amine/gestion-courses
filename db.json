@@ -1,22 +1,29 @@
 {
-    "courses": [
-      {
-        "id": "7c2b",
-        "title": "aaa",
-        "description": "aaaa",
-        "duration": 5
-      },
-      {
-        "id": "7981",
-        "title": "java",
-        "description": "desc-java",
-        "duration": 4
-      },
-      {
-        "id": "e45d",
-        "title": "spring",
-        "description": "desc-spring",
-        "duration": 14
-      }
-    ]
-  }
+  "courses": [
+    {
+      "id": "7c2b",
+      "title": "aaa",
+      "description": "aaaa",
+      "duration": 5
+    },
+    {
+      "id": "7981",
+      "title": "java",
+      "description": "desc-java",
+      "duration": 4
+    },
+    {
+      "id": "e45d",
+      "title": "spring",
+      "description": "desc-spring",
+      "duration": 14
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "password"
+    }
+  ]
+}

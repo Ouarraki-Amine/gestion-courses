@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="login-card">
+      <h2>Connexion</h2>
+      <form (ngSubmit)="onLogin()">
+        <input
+          type="text"
+          placeholder="Nom d'utilisateur"
+          [(ngModel)]="username"
+          name="username"
+          required
+        />
+        
+        <input
+          type="password"
+          placeholder="Mot de passe"
+          [(ngModel)]="password"
+          name="password"
+          required
+        />
+        
+        <button type="submit">Se connecter</button>
+        
+        <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+      </form>
+    </div>
+  </div>
+  

@@ -23,7 +23,6 @@ export class EditCourseComponent {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       this.getCourseDetails(id);
-      console.log("object")
     }
   }
 
@@ -38,7 +37,7 @@ export class EditCourseComponent {
   updateCourse(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.courseService.updateCourse(id, this.course).subscribe(() => {
-      alert('Cours modifié avec succès !');
+      alert('Cours modifie avec succes !');
       this.router.navigate(['/admin']);
     });
   }
