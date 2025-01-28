@@ -1,0 +1,7 @@
+<div *ngIf="course" class="course-card">
+    <img src="assets/images/book.jpg" alt="Course Book">
+    <h2 class="course-title">{{ course.title }}</h2>
+    <p class="course-description">{{ course.description }}</p>
+    <span class="duration">Durée : {{ course?.duration }} heures</span>
+  </div>
+  

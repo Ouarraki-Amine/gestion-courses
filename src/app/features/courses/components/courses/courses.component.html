@@ -1,0 +1,10 @@
+<div class="courses-container">
+    <h1>Liste des cours</h1>
+    <div class="courses-list">
+      <app-courses-card 
+        *ngFor="let course of courses" 
+        [course]="course">
+      </app-courses-card>
+    </div>
+  </div>
+  
