@@ -1,17 +1,23 @@
-<div class="edit-course">
-    <h1>Modifier un cours</h1>
-  
-    <form (ngSubmit)="updateCourse()">
-      <label for="title">Titre :</label>
-      <input type="text" id="title" [(ngModel)]="course.title" name="title" required />
-  
-      <label for="description">Description :</label>
-      <textarea id="description" [(ngModel)]="course.description" name="description" required></textarea>
-  
-      <label for="duration">Duree (heures) :</label>
-      <input type="number" id="duration" [(ngModel)]="course.duration" name="duration" required />
-  
-      <button type="submit">Enregistrer</button>
+<div class="edit-course-container">
+    <h2>Modifier un cours</h2>
+    <form (ngSubmit)="updateCourse()" class="edit-course-form">
+      
+        <label for="title">Titre:</label>
+        <input type="text" id="title" [(ngModel)]="course.title" name="title" required />
+      
+      
+        <label for="description">Description:</label>
+        <textarea id="description" [(ngModel)]="course.description" name="description" required></textarea>
+      
+      
+        <label for="duration">Duree:</label>
+        <input type="number" id="duration" [(ngModel)]="course.duration" name="duration" required />
+      
+      
+        <label for="image">Image:</label>
+        <input type="file" (change)="onFileSelected($event)">
+      
+      <button type="submit">Ajouter</button>
     </form>
   </div>
   

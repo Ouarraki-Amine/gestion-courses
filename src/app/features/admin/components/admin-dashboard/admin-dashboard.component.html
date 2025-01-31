@@ -15,11 +15,12 @@
         <tr *ngFor="let course of courses">
           <td>{{ course.id }}</td>
           <td>{{ course.title }}</td>
-          <td>{{ course.description }}</td>
+          <td>{{ course.description | slice:0:20 }}...</td>
           <td>{{ course.duration }} heures</td>
           <td>
             <button (click)="deleteCourse(course.id)">Supprimer</button>
             <a [routerLink]="['/admin/edit-course', course.id]"  routerLinkActive="active">Modifier</a>
+            <a id="a2" [routerLink]="['/courses', course.id]" routerLinkActive="active">Details</a>
           </td>
         </tr>
       </tbody>

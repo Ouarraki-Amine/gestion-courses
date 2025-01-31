@@ -1,72 +1,46 @@
-.edit-course {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .edit-course h1 {
-    text-align: center;
-    color: #343a40;
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    color: #495057;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-sizing: border-box;
-  }
-  
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  textarea {
-    resize: none;
-    height: 100px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button:disabled {
-    background-color: #6c757d;
-    cursor: not-allowed;
-  }
-  
-  form button[type="submit"] {
-    align-self: flex-end;
-  }
-  
+.edit-course-container {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-course-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.edit-course-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.edit-course-form input,
+.edit-course-form textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-course-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.edit-course-form button:hover {
+  background-color: #0056b3;
+}

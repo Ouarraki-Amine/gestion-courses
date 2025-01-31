@@ -72,7 +72,20 @@
     margin-left: 10px;
     display: inline-block;
   }
-  
+
+  #a2 {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  #a2:hover {
+    background-color: #175618;
+  }
   a:hover {
     background-color: #0056b3;
   }

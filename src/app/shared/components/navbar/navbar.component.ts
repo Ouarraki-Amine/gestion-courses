@@ -12,6 +12,7 @@ import { AuthService } from '../../../core/auth.service';
 export class NavbarComponent {
   constructor(public authService: AuthService, private router: Router) {}
 
+  //deconnecte l'user
   onLogout(): void {
     this.authService.logout();
     this.router.navigate(['/']);

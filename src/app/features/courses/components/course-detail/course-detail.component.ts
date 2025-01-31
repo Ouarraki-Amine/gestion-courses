@@ -15,6 +15,7 @@ export class CourseDetailComponent {
 
   constructor(private route: ActivatedRoute, private courseService: CourseService) {}
 
+  //recuperer les details d'un courses avec leur id
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
     this.courseService.getCourseById(id).subscribe((data) => {

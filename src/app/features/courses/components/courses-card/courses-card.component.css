@@ -47,10 +47,10 @@
     margin-bottom: 20px;
   }
  
-  .course-card a {
+  a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; 
+    background-color: green; 
     color: #fff; 
     text-decoration: none; 
     border-radius: 5px; 
@@ -58,7 +58,7 @@
     transition: background-color 0.3s ease; 
   }
   
-  .course-card a:hover {
-    background-color: #0056b3; 
+  a:hover {
+    background-color: #175618; 
   }
   

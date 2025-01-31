@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CoursesCardComponent {
 
-  @Input() course: any;
+  @Input() course: any; //declaration de l'input course permet de passer un objet courses depuis le parent
 }

@@ -1,5 +1,5 @@
 <div class="course-card"> 
-    <img src="assets/images/book.jpg" alt="Course Book">
+    <img *ngIf="course.image" [src]="course.image" alt="Image du cours" class="course-image">
     <h2>{{ course?.title }}</h2>
     <a [routerLink]="['/courses', course?.id]" routerLinkActive="active">Voir le cours</a>
   </div>

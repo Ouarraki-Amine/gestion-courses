@@ -4,8 +4,8 @@
     </div>
     <ul class="nav-links">
       <li><a routerLink="/courses" routerLinkActive="active">Cours</a></li>
-      <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
-      <li><a routerLink="/courses/add">Ajouter un cours</a></li>
+      <li><a *ngIf="authService.isLoggedIn()" routerLink="/admin" routerLinkActive="active">Admin</a></li>
+      <li><a *ngIf="authService.isLoggedIn()" routerLink="/courses/add">Ajouter un cours</a></li>
       <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login">Connexion</a></li>
       <li *ngIf="authService.isLoggedIn()"><a (click)="onLogout()">Déconnexion</a></li>
     
